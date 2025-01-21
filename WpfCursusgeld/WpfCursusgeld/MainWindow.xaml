@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="763*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="numeriekButton" Content="Test numeriek" HorizontalAlignment="Left" Margin="132,332,0,0" VerticalAlignment="Top" Height="60" Width="122" Click="numeriekButton_Click"/>
+        <Button x:Name="berekenKnop" Content="berekenen" HorizontalAlignment="Left" Margin="308,328,0,0" VerticalAlignment="Top" Height="64" Width="114" RenderTransformOrigin="0.888,0.529" Click="berekenKnop_Click"/>
+        <Button x:Name="closeButton" Content="Afsluiten" HorizontalAlignment="Left" Margin="508,328,0,0" VerticalAlignment="Top" Height="64" Width="136" Click="closeButton_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="220,90,0,0" TextWrapping="Wrap" Text="Jaar;" VerticalAlignment="Top" Height="32" Width="38" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="196,140,0,0" TextWrapping="Wrap" Text="Lesuren;" VerticalAlignment="Top" Height="26" Width="62" FontSize="16" RenderTransformOrigin="0.524,0.626"/>
+        <TextBlock HorizontalAlignment="Left" Margin="132,200,0,0" TextWrapping="Wrap" Text="Inschrijvingsgeld;" VerticalAlignment="Top" Height="27" Width="126" FontSize="16"/>
+        <TextBox x:Name="yearTextBox" HorizontalAlignment="Left" Margin="287,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" Height="24" TextChanged="yearTextBox_TextChanged"/>
+        <TextBox x:Name="hoursTextBox" HorizontalAlignment="Left" Margin="287,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" Height="22"/>
+        <TextBox x:Name="totaalTextBox" HorizontalAlignment="Left" Margin="287,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" Height="27"/>
+        <TextBox x:Name="isNumeriekTextBox" HorizontalAlignment="Left" Margin="542,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" Height="34" DataContextChanged="isNumeriekTextBox_DataContextChanged"/>
+        <TextBox x:Name="isSchrikkeljaarTextBox" HorizontalAlignment="Left" Margin="542,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" Height="36"/>
+
     </Grid>
 </Window>
